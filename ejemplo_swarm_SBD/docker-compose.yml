@@ -1,0 +1,30 @@
+version: "3.9"
+
+networks:
+  red_global:
+    driver: overlay
+
+services:
+  web:
+    image: ${username}/nginx-nodeinfo:latest
+    deploy:
+      replicas: 4
+      placement:
+        constraints: [node.role == worker]
+    ports:
+      - "8082:80"
+    networks:
+      - red_global
+
+  visualizer:
+    image: dockersamples/visualizer:latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+    networks:
+      - red_global
+
