@@ -5,7 +5,7 @@ executionFrameworkSpec:
   segmentUriPushJobRunnerClassName: 'org.apache.pinot.plugin.ingestion.batch.standalone.SegmentUriPushJobRunner'
 jobType: SegmentCreationAndTarPush
 inputDirURI: '/tmp/raw_data/transcript/'
-includeFileNamePattern: 'glob:**/*.csv'
+includeFileNamePattern: 'glob:**/*.csv'ERRORS
 outputDirURI: '/tmp/segments/transcript/'
 overwriteOutput: true
 pinotFSSpecs:
