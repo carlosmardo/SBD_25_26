@@ -7,4 +7,6 @@ Repositorio con los ejemplos de clase de Sistemas de Big Data
 
 **06/11/2025** Añadido el ejemplo montado con docker swarm, como aún no empleamos registros propios, tiramos de imagen en docker-hub, modificar vuestro nombre de usuario.
 
-**24/11/2025** Añadidos los ficheros para ejecutar el ejemplo de pinot.
+**24/11/2025** Añadidos los ficheros para ejecutar el ejemplo de Apache Pinot.
+
+**29/01/2026** Añadido ejemplo de Apache NiFi
